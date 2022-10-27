@@ -64,13 +64,14 @@
                             <url>file://C:/Users/josep/IdeaProjects/diagnosit-example/repo</url>
                             <sources>${project.build.directory}/${project.build.finalName}.jar</sources>
                             <pomFile>pom.xml</pomFile>
+
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
+        <finalName>${project.artifactId}-${project.version}</finalName>
     </build>
-
     <distributionManagement>
         <repository>
             <id>diagnostic-starter</id>

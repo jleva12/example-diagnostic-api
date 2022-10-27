@@ -41,7 +41,7 @@
         <!--other repositories if any-->
         <repository>
             <id>diagnostic-starter</id>
-            <name>syc-diagnostic-start</name>
+            <name>syc-diagnostic-starter</name>
             <url>file:${project.basedir}/repo/com/syck/syck-diagnostic-starter/1.0-SNAPSHOT/</url>
         </repository>
     </repositories>
