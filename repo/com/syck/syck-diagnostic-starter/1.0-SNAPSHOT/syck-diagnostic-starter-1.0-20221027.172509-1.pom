@@ -13,6 +13,8 @@
 
     <name>syck-diagnostic-starter</name>
 
+    <packaging>jar</packaging>
+
     <description>syck-diagnostic-starter</description>
 
     <properties>
@@ -47,7 +49,6 @@
     </dependencies>
 
     <build>
-
         <plugins>
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
@@ -60,16 +61,20 @@
                             <goal>deploy-file</goal>
                         </goals>
                         <configuration>
-                            <file>${project.build.directory}/${project.build.finalName}.jar</file>
+                            <file>${project.build.directory}/syck-diagnostic-starter.jar</file>
                             <url>file://C:/Users/josep/IdeaProjects/diagnosit-example/repo</url>
-                            <sources>${project.build.directory}/${project.build.finalName}.jar</sources>
+<!--                            <sources>${project.build.directory}/${project.build.finalName}.jar</sources>-->
                             <pomFile>pom.xml</pomFile>
+                            <groupId>com.syck</groupId>
+                            <artifactId>syck-diagnostic-starter</artifactId>
+                            <version>1.0-SNAPSHOT</version>
+                            <uniqueVersion>false</uniqueVersion>
+                            <packaging>jar</packaging>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
-        <finalName>${project.artifactId}</finalName>
     </build>
 
     <distributionManagement>
