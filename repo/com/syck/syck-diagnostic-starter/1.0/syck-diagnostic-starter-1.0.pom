@@ -67,8 +67,9 @@
                             <pomFile>pom.xml</pomFile>
                             <groupId>com.syck</groupId>
                             <artifactId>syck-diagnostic-starter</artifactId>
-                            <version>1.0-SNAPSHOT</version>
+                            <version>1.0</version>
                             <uniqueVersion>false</uniqueVersion>
+                            <packaging>jar</packaging>
                             <packaging>jar</packaging>
                         </configuration>
                     </execution>

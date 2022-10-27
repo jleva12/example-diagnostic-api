@@ -40,8 +40,8 @@
     <repositories>
         <repository>
             <id>diagnostic-starter</id>
-            <name>syc-diagnostic-start</name>
-            <url>file:${project.basedir}/repo/com/syck/syck-diagnostic-starter/1.0-SNAPSHOT</url>
+            <name>syck-diagnostic-starter</name>
+            <url>file:${project.basedir}/repo</url>
         </repository>
     </repositories>
 
