@@ -15,3 +15,4 @@ diagnostic:
 
 
 
+#  mvn deploy:deploy-file -Durl=file:///C:/Users/josep/IdeaProjects/diagnosit-example/repo -Dfile=C:/Users/josep/IdeaProjects/syck-diagnostic-parent/syck-diagnostic-starter/target/syck-diagnostic-starter-1.0-SNAPSHOT.jar -DgroupId=com.syck -DartifactId=syck-diagnostic-starter -Dpackaging=jar -Dversion=1.0-SNAPSHOT

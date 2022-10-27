@@ -60,9 +60,9 @@
                             <goal>deploy-file</goal>
                         </goals>
                         <configuration>
-                            <file>${project.build.directory}/${project.artifactId}.jar</file>
+                            <file>${project.build.directory}/${project.build.finalName}.jar</file>
                             <url>file://C:/Users/josep/IdeaProjects/diagnosit-example/repo</url>
-                            <sources>${project.build.directory}/${project.artifactId}.jar</sources>
+                            <sources>${project.build.directory}/${project.build.finalName}.jar</sources>
                             <pomFile>pom.xml</pomFile>
                         </configuration>
                     </execution>
@@ -71,11 +71,12 @@
         </plugins>
         <finalName>${project.artifactId}</finalName>
     </build>
+
     <distributionManagement>
         <repository>
             <id>diagnostic-starter</id>
             <name>syc-diagnostic-start</name>
-            <url>file:${project.basedir}/repo</url>
+            <url>file://${project.basedir}/repo</url>
         </repository>
     </distributionManagement>
 
@@ -83,7 +84,7 @@
         <repository>
             <id>diagnostic-starter</id>
             <name>syc-diagnostic-start</name>
-            <url>file:${project.basedir}/repo</url>
+            <url>file://${project.basedir}/repo</url>
         </repository>
     </repositories>
 

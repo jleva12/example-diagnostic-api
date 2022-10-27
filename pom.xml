@@ -38,22 +38,15 @@
 
 
     <repositories>
-        <!--other repositories if any-->
         <repository>
             <id>diagnostic-starter</id>
-            <name>syc-diagnostic-starter</name>
-            <url>file:${project.basedir}/repo/com/syck/syck-diagnostic-starter/1.0-SNAPSHOT/</url>
+            <name>syc-diagnostic-start</name>
+            <url>file://${project.basedir}/repo</url>
         </repository>
     </repositories>
 
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+
+
 
 </project>
