@@ -39,9 +39,9 @@
 
     <repositories>
         <repository>
-            <id>diagnostic-starter</id>
-            <name>syck-diagnostic-starter</name>
-            <url>file:${project.basedir}/repo/com/syck/syck-diagnostic-starter/1.0</url>
+            <id>project.local</id>
+            <name>project</name>
+            <url>file:${project.basedir}/repo</url>
         </repository>
     </repositories>
 
