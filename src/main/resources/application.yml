@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+
+diagnostic:
+  apiKey: BV98TrYgvc
+  apiSecret: hoSqI07NXMwNZrJUbVso2yo5YbhpiT7O
+  appName:  Example App
+#  handler:
+#    numberOfThreads: 5
+#    batchSize: 100
+#    delay: 5000
+#    publishLevel: INFO
+
+
+
+
