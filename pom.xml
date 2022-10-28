@@ -44,7 +44,7 @@
         <dependency>
             <groupId>com.syck</groupId>
             <artifactId>syck-diagnostic-starter</artifactId>
-            <version>5.0-SNAPSHOT</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>
@@ -52,7 +52,7 @@
     <repositories>
         <repository>
             <id>repsy</id>
-            <name>My Private Maven Repository on Repsy</name>
+            <name>syck-diagnostic</name>
             <url>https://repo.repsy.io/mvn/jleva/syck-diagnostic</url>
         </repository>
     </repositories>
