@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import syck.diagnostic.factory.DiagnosticFactory;
 import syck.diagnostic.proxy.DiagnosticProxyFactory;
-import syckdiagnostic.syckdiagnosticstarter.aspect.SyckDiagnostic;
 
 import static syck.diagnostic.context.DiagnosticCtxBuilder.http;
 
@@ -27,8 +26,8 @@ public class ExampleController {
         this.factory = factory;
     }
 
-    @GetMapping("/{one}/{two}/{userId}")
-    @SyckDiagnostic(type = "CALCULATOR", correlationId = "#userId")
+    @GetMapping("/calc/{one}/{two}/{userId}")
+//    @SyckDiagnostic(type = "CALCULATOR", correlationId = "#userId")
     public ResponseEntity<?> handle (@PathVariable int one, @PathVariable int two,  @PathVariable String userId) {
 
         log.info("Test of diagnostic logger custom annoation");

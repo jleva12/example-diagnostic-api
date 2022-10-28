@@ -7,10 +7,13 @@ diagnostic:
   apiSecret: hoSqI07NXMwNZrJUbVso2yo5YbhpiT7O
   appName:  Example App
 #  handler:
-#    numberOfThreads: 5
+#    numberOfThreads: 88
 #    batchSize: 100
 #    delay: 5000
 #    publishLevel: INFO
+  interceptorPaths: /calc/**,/**
+
+
 
 
 
